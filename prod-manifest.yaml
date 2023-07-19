@@ -69,7 +69,7 @@ kind: Ingress
 metadata:
   name: prod-stedi-jordan-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: https://www.googleapis.com/compute/v1/projects/cit262-team-01/global/addresses/prod-stedi-jordan-public # This IP has not been created yet - need to create first
+    kubernetes.io/ingress.global-static-ip-name: prod-stedi-jordan-public # This IP has not been created yet - need to create first
     networking.gke.io/managed-certificates: prod-stedi-jordan-certificate
     # kubernetes.io/ingress.allow-http: "false"
 spec:
